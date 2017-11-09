@@ -25679,41 +25679,6 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-ion-input {
-  text-align: left;
-  background-color: rgba(37, 202, 239, 0.342);
-  color: #22caf4;
-  width: 100%;
-  padding: 7px;
-  margin-top: 10px;
-}
-
-div .inputs {
-  text-align: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  margin-top: 20%;
-}
-
-.label1 {
-  margin-top: 10px;
-  color: #22caf4;
-  text-align: left;
-  float: left;
-}
-
-.label2 {
-  margin-top: 10px;
-  color: #22caf4;
-  text-align: right;
-  float: right;
-}
-
-.button {
-  margin-top: 10px;
-}
-
 ion-footer button {
   width: 100%;
   padding-top: 1000px;
