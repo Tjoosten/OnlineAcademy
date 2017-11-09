@@ -23,7 +23,7 @@ export class LoginFormComponent {
         result:  await this.afAuth.auth.signInWithEmailAndPassword(this.account.email, this.account.password),
       }
       this.toast.create({
-        message: "Login Successfull",
+        message: "U bent ingelogd",
         duration: 3000
       }).present();
       this.loginStatus.emit(result);
