@@ -1,0 +1,8 @@
+{
+  "name": "OnlineAcademy",
+  "app_id": "8d478b8d",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
