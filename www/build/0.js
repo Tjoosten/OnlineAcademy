@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 309:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterPageModule", function() { return RegisterPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register__ = __webpack_require__(336);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__ = __webpack_require__(312);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(325);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1091,7 +1091,7 @@ __decorate([
 ], LoginFormComponent.prototype, "loginStatus", void 0);
 LoginFormComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'app-login-form>',template:/*ion-inline-start:"/Users/nikolainossulenko/OnlineAcademy/src/components/login-form/login-form.component.html"*/'<div class="inputs">\n<ion-row><ion-input [(ngModel)]="account.email" type="email" placeholder="E-mail" id="email"></ion-input></ion-row>\n<ion-row><ion-input [(ngModel)]="account.password" type="password" placeholder="Password" ></ion-input></ion-row>\n</div>\n<button ion-button full text-capitalize (click)="login()" id="login">Login</button>\n<label class="label1">Wachtwoord vergeten</label>\n<label class="label2">Registreer nu!</label>\n\n\n\n'/*ion-inline-end:"/Users/nikolainossulenko/OnlineAcademy/src/components/login-form/login-form.component.html"*/
+        selector: 'app-login-form>',template:/*ion-inline-start:"C:\Users\Gebruiker\Dropbox\OnlineAcademy\src\components\login-form\login-form.component.html"*/'<div class="inputs">\n\n<ion-row><ion-input [(ngModel)]="account.email" type="email" placeholder="E-mail" id="email"></ion-input></ion-row>\n\n<ion-row><ion-input [(ngModel)]="account.password" type="password" placeholder="Password" ></ion-input></ion-row>\n\n</div>\n\n<button ion-button full text-capitalize (click)="login()" id="login">Login</button>\n\n<label class="label1">Wachtwoord vergeten</label>\n\n<label class="label2">Registreer nu!</label>\n\n\n\n\n\n\n\n'/*ion-inline-end:"C:\Users\Gebruiker\Dropbox\OnlineAcademy\src\components\login-form\login-form.component.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */]])
 ], LoginFormComponent);
@@ -1200,7 +1200,7 @@ var RegisterFormComponent = (function () {
 }());
 RegisterFormComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'app-register-form',template:/*ion-inline-start:"/Users/nikolainossulenko/OnlineAcademy/src/components/register-form/register-form.component.html"*/'      <ion-input [(ngModel)]="account.email" type="email" placeholder="E-mail"></ion-input>\n      <ion-input [(ngModel)]="account.password" type="password" placeholder="Password"></ion-input>\n      <button ion-button full (click)="register()">Register</button>\n      <ion-footer>\n        \n      </ion-footer>\n    '/*ion-inline-end:"/Users/nikolainossulenko/OnlineAcademy/src/components/register-form/register-form.component.html"*/
+        selector: 'app-register-form',template:/*ion-inline-start:"C:\Users\Gebruiker\Dropbox\OnlineAcademy\src\components\register-form\register-form.component.html"*/'      <ion-input [(ngModel)]="account.email" type="email" placeholder="E-mail"></ion-input>\n\n      <ion-input [(ngModel)]="account.password" type="password" placeholder="Password"></ion-input>\n\n      <button ion-button full (click)="register()">Register</button>\n\n      <ion-footer>\n\n        \n\n      </ion-footer>\n\n    '/*ion-inline-end:"C:\Users\Gebruiker\Dropbox\OnlineAcademy\src\components\register-form\register-form.component.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* ToastController */]])
 ], RegisterFormComponent);
@@ -1209,7 +1209,7 @@ RegisterFormComponent = __decorate([
 
 /***/ }),
 
-/***/ 337:
+/***/ 336:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1245,7 +1245,7 @@ var RegisterPage = (function () {
 }());
 RegisterPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-register',template:/*ion-inline-start:"/Users/nikolainossulenko/OnlineAcademy/src/pages/register/register.html"*/'<!--\n  Generated template for the RegisterPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <ion-title>Register</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n   <app-register-form></app-register-form>\n\n</ion-content>\n'/*ion-inline-end:"/Users/nikolainossulenko/OnlineAcademy/src/pages/register/register.html"*/,
+        selector: 'page-register',template:/*ion-inline-start:"C:\Users\Gebruiker\Dropbox\OnlineAcademy\src\pages\register\register.html"*/'<!--\n\n  Generated template for the RegisterPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <ion-title>Register</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n   <app-register-form></app-register-form>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Gebruiker\Dropbox\OnlineAcademy\src\pages\register\register.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__["a" /* AngularFireAuth */]])
 ], RegisterPage);
