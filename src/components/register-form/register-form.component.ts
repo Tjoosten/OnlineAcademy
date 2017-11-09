@@ -23,7 +23,7 @@ export class RegisterFormComponent {
     const result = await 
     this.afAuth.auth.createUserWithEmailAndPassword(this.account.email, this.account.password);
     this.toast.create({
-      message: "Account succesvol aangemaakt!",
+      message: "Account successfully created.",
       duration: 3000
     }).present();
     console.log(result);
