@@ -1,2 +1,2 @@
 ## OnlineAcademy
-### made by: Nikolai Nossulenko & Lars Suffys
+### Made by: Nikolai Nossulenko & Lars Suffys
