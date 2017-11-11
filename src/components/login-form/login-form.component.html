@@ -3,7 +3,7 @@
 <ion-row><ion-input [(ngModel)]="account.password" type="password" placeholder="Password" ></ion-input></ion-row>
 </div>
 <button ion-button full text-capitalize (click)="login()" id="login">Login</button>
-<label class="label1">Wachtwoord vergeten</label>
+<label class="label1" click="navigateToPage('RegisterPage')">Wachtwoord vergeten</label>
 <label class="label2">Registreer nu!</label>
 
 

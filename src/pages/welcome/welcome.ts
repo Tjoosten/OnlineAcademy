@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { VideoPlayer } from '@ionic-native/video-player';
+import { IonicPage, NavController } from 'ionic-angular';
 /**
  * Generated class for the WelcomePage page.
  *
@@ -15,7 +14,7 @@ import { VideoPlayer } from '@ionic-native/video-player';
 })
 export class WelcomePage {
 
-  constructor(private videoPlayer: VideoPlayer,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
   }
   navigateToPage(pageName:string) {
     this.navCtrl.push(pageName);

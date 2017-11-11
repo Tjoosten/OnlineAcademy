@@ -1,5 +1,5 @@
 import { Component,EventEmitter, Output } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 import {AngularFireAuth} from 'angularfire2/auth';
 
 import {Account} from '../../models/account/account.interface';
@@ -13,7 +13,7 @@ import { LoginResponse } from "../../models/login/login-response.interface";
 export class LoginPage {
   account = {} as Account;
   @Output()loginStatus: EventEmitter<any>;
-  constructor(private afAuth: AngularFireAuth, private navCtrl: NavController, private navParams: NavParams) {
+  constructor(private afAuth: AngularFireAuth, private navCtrl: NavController) {
     this.loginStatus = new EventEmitter<any>();
   }
   login(event: LoginResponse){

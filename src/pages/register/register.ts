@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {AngularFireAuth} from 'angularfire2/auth';
-import {ToastController} from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 /**
  * Generated class for the RegisterPage page.
  *
@@ -17,7 +15,7 @@ import {ToastController} from 'ionic-angular';
 export class RegisterPage {
   account = {} as Account
 
-  constructor(private toast: ToastController, private afAuth: AngularFireAuth) {
+  constructor() {
   }
 
 
