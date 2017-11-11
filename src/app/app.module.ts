@@ -7,6 +7,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { AngularFireModule } from 'angularfire2'
 import {FIREBASE_CONFIG} from './app.firebase.config';
+import { VideoPlayer } from '@ionic-native/video-player';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import {FIREBASE_CONFIG} from './app.firebase.config';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    VideoPlayer
   ]
 })
 export class AppModule {}
