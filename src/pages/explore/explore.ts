@@ -17,10 +17,4 @@ export class ExplorePage {
 
   }
 
-  playVideo()
-  {
-
-  }
-
-
 }
