@@ -1,5 +1,5 @@
 import { Component,EventEmitter, Output } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController, ToastController } from 'ionic-angular';
 import {AngularFireAuth} from 'angularfire2/auth';
 
 import {Account} from '../../models/account/account.interface';
@@ -13,12 +13,22 @@ import { LoginResponse } from "../../models/login/login-response.interface";
 export class LoginPage {
   account = {} as Account;
   @Output()loginStatus: EventEmitter<any>;
-  constructor(private afAuth: AngularFireAuth, private navCtrl: NavController) {
+  constructor(private afAuth: AngularFireAuth, private navCtrl: NavController, private toast: ToastController) {
     this.loginStatus = new EventEmitter<any>();
   }
   login(event: LoginResponse){
     if(!event.error){
+      this.toast.create({
+        message: `Welcome to Online Academy, ${event.result.email}`,
+        duration: 2000
+      }).present();
       this.navCtrl.setRoot('TabsPage');
+    }
+    else {
+      this.toast.create({
+        message: event.error.message,
+        duration: 2000
+      })
     }
     console.log(event);
 
