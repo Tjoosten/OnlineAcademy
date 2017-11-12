@@ -1,0 +1,20 @@
+<!--
+  Generated template for the QuotePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+        <ion-navbar color="secondary">
+        <ion-title>Online Academy</ion-title>
+      </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-row><label>Auteur van de quote:</label></ion-row>
+    <ion-input [(ngModel)]="auteur" type="text" placeholder="Auteur van de quote" id="auteur"></ion-input>
+    <ion-row><label>Quote:</label></ion-row>
+    <ion-textarea [(ngModel)]="quote" type="text" placeholder="Uw quote" id="quote"></ion-textarea>
+
+</ion-content>

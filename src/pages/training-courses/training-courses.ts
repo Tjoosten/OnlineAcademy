@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser';
 
 /**
  * Generated class for the TrainingCoursesPage page.
@@ -15,11 +16,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TrainingCoursesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public iab: InAppBrowser) {
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TrainingCoursesPage');
-  }
-
+  openWebpage(url: string) {
+    
+    const options: InAppBrowserOptions = {
+      zoom: 'no'
+    }
+    const browser = this.iab.create(url, '_self', options);
+   }
 }

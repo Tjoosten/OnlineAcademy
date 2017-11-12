@@ -8,6 +8,8 @@ import { MyApp } from './app.component';
 import { AngularFireModule } from 'angularfire2'
 import {FIREBASE_CONFIG} from './app.firebase.config';
 import { VideoPlayer } from '@ionic-native/video-player';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { VideoPlayer } from '@ionic-native/video-player';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    VideoPlayer
+    VideoPlayer,
+    InAppBrowser,
   ]
 })
 export class AppModule {}
