@@ -1,7 +1,28 @@
-      <ion-input [(ngModel)]="account.email" type="email" placeholder="E-mail"></ion-input>
-      <ion-input [(ngModel)]="account.password" type="password" placeholder="Password"></ion-input>
-      <button ion-button full (click)="register()">Register</button>
-      <ion-footer>
-        
-      </ion-footer>
-    
+<form #registerForm="ngForm" novalidate>
+            <ion-row><ion-input 
+                  [(ngModel)]="account.email" 
+                  type="email" 
+                  placeholder="E-mail" 
+                  id="email"
+                   name="email" 
+                   #email="ngModel" 
+                   required
+                   pattern="[a-z0-9!#$%&'*+/=?^_`{\}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{\}~-]+)*@(?:[a-z0-9](?:[a-z0-9]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"></ion-input>
+                  </ion-row>
+                  <div *ngIf="email.invalid && email.dirty">
+                  <span class="global__input-error">Email addreess is not valid</span>
+                  </div>
+              <ion-row><ion-input 
+                  [(ngModel)]="account.password" 
+                  type="password" 
+                  placeholder="Password" 
+                  name="password" 
+                  #password="ngModel" 
+                  required 
+                  pattern="[a-zA-Z0-9!@#$%^&*]{6,20}$"
+                  ></ion-input></ion-row>
+                  <div *ngIf="password.invalid && password.dirty">
+                  <span class="global__input-error">Password must be at least 6 characters long</span>
+                  </div>
+      <button ion-button full (click)="register()" [disabled]="registerForm">Register</button>
+</form>

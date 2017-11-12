@@ -9,6 +9,7 @@ import { AngularFireModule } from 'angularfire2'
 import {FIREBASE_CONFIG} from './app.firebase.config';
 import { VideoPlayer } from '@ionic-native/video-player';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import {FormsModule} from '@angular/forms';
 
 
 
