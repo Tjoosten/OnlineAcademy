@@ -18,8 +18,9 @@ export class LoginFormComponent {
     pageName === 'TabsPage' ? this.navCtrl.setRoot(pageName) : this.navCtrl.push(pageName);
   }
   async login(){
-    const loginResponse = await this.auth.SignInWithEmailAndPassword(this.account)
-    this.loginStatus.emit(loginResponse);
+      const loginResponse = await this.auth.SignInWithEmailAndPassword(this.account)
+      this.loginStatus.emit(loginResponse);
+
   }
 
 

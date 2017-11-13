@@ -24,5 +24,5 @@
                   <div *ngIf="password.invalid && password.dirty">
                   <span class="global__input-error">Password must be at least 6 characters long</span>
                   </div>
-      <button ion-button full (click)="register()" [disabled]="registerForm">Register</button>
+      <button ion-button full (click)="register()" [disabled]="registerForm.invalid">Register</button>
 </form>

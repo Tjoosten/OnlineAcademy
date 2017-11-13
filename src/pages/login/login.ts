@@ -28,7 +28,7 @@ export class LoginPage {
       this.toast.create({
         message: event.error.message,
         duration: 2000
-      })
+      }).present();
     }
     console.log(event);
 
