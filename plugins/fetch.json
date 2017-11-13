@@ -10,7 +10,7 @@
   "cordova-plugin-inappbrowser": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-inappbrowser@latest"
+      "id": "cordova-plugin-inappbrowser@^1.7.2"
     },
     "is_top_level": true,
     "variables": {}
@@ -67,6 +67,14 @@
     "source": {
       "type": "registry",
       "id": "cordova-plugin-youtube-video-player"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-firebase": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-firebase"
     },
     "is_top_level": true,
     "variables": {}
