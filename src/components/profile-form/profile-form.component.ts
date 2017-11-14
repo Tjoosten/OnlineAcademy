@@ -18,7 +18,7 @@ export class ProfileFormComponent implements OnDestroy {
 
   constructor(private auth: AuthService, private data: DataService,private navCtrl: NavController) {
     this.authenticatedUser$ = this.auth.getAuthenticatedUser().subscribe((user: User)=> {
-      this.authenticatedUser= user
+      this.authenticatedUser = user
     })
   }
   signOut(){
@@ -36,5 +36,5 @@ export class ProfileFormComponent implements OnDestroy {
   }
 ngOnDestroy(): void {
   this.authenticatedUser$.unsubscribe();
-}
+  }
 }

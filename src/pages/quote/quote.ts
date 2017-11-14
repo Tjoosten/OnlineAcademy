@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
 @IonicPage()
 @Component({
   selector: 'page-quote',
@@ -9,5 +8,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class QuotePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+  createQuote(Auteur: string, quote: string){
+  
   }
 }
