@@ -13,7 +13,8 @@
     <ion-textarea [(ngModel)]="Quote" type="text" placeholder="Uw quote" id="quote"></ion-textarea>
     <button ion-button (click)="addQuote(Author,Quote)">Sla quote op</button>
 
-    <ion-list>
+
+  
       <ion-list>
         <ion-item  *ngFor="let quotes of Quotes">
           <label floating>Auteur: </label>
@@ -22,6 +23,5 @@
           {{quotes.Quote}}
         </ion-item>
       </ion-list>
-    </ion-list>
 
 </ion-content>

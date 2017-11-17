@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import firebase from 'firebase';
+
+import { AngularFireDatabase } from "angularfire2/database";
+import { Item } from 'ionic-angular/components/item/item';
 @IonicPage()
 @Component({
   selector: 'page-quote',
@@ -9,23 +12,22 @@ import firebase from 'firebase';
 export class QuotePage {
   //Reference to firebase quotes
   QuotesRef: firebase.database.Reference = firebase.database().ref('/quotes/');
-  Quotes = [];
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.loadQuotes();
+  Quotes : Array<any> = [];
+  constructor(public navCtrl: NavController, public navParams: NavParams, private afdb: AngularFireDatabase) {
   }
   addQuote(Author: string, Quote: string): void {
-    let newQuotesRef = this.QuotesRef.push();
-    newQuotesRef.set({
+    this.QuotesRef.push({
       Auteur: Author,
       Quote: Quote
     });
   }
-  loadQuotes() {
-    this.QuotesRef.on('value', quoteSnapshot => {
-      let QuoteVal = quoteSnapshot.val();
-      this.Quotes.push(QuoteVal);
-      console.log(this.Quotes);
+  ionViewDidLoad() {
+   this.QuotesRef.on('value' , quoteSnapshot => {
+    quoteSnapshot.forEach(quoteSnap => {
+      this.Quotes.push(quoteSnap.val());
+      return false;
     });
+   });
   }
 
 
