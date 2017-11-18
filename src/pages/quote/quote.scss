@@ -1,8 +1,20 @@
 page-quote {
     #auteur {
         width: 50%;
+        background: white;
     }
     #quote {
-        height: 35%;
+        height: 25%;
+        background: #f1f1f1;
+    }
+
+    div.q {
+        border: 1px solid rgba(140,140,140,0.43);
+        border-radius: 5px;
+        color: #232323;
+        display: block;
+        text-align: center;
+        width: 100%;
+        background-repeat: no-repeat;
     }
 }

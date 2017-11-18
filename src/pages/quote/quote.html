@@ -6,22 +6,20 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
     <ion-row><label>Auteur van de quote:</label></ion-row>
     <ion-input [(ngModel)]="Author" type="text" placeholder="Auteur van de quote" id="auteur"></ion-input>
     <ion-row><label>Quote:</label></ion-row>
     <ion-textarea [(ngModel)]="Quote" type="text" placeholder="Uw quote" id="quote"></ion-textarea>
-    <button ion-button (click)="addQuote(Author,Quote)">Sla quote op</button>
+    <button ion-button block (click)="addQuote(Author,Quote)">Sla quote op</button>
 
 
   
-      <ion-list>
+      <ion-list *ngIf="Quotes !== null">
         <ion-item  *ngFor="let quotes of Quotes">
-          <label floating>Auteur: </label>
+          <div class="q" text-wrap>{{quotes.Quote}}</div>
           {{quotes.Auteur}}
-          <label floating>Quote: </label>
-          {{quotes.Quote}}
-        </ion-item>
+          </ion-item>
       </ion-list>
 
 </ion-content>

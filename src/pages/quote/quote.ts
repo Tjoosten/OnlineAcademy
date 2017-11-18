@@ -22,14 +22,14 @@ export class QuotePage {
     });
   }
   ionViewDidLoad() {
-   this.QuotesRef.on('value' , quoteSnapshot => {
-    quoteSnapshot.forEach(quoteSnap => {
+    this.QuotesRef.on('value' , quoteSnapshot => {
+      this.Quotes = [];
+     quoteSnapshot.forEach(quoteSnap => {
       this.Quotes.push(quoteSnap.val());
-      return false;
+           return false;
+     });
     });
-   });
   }
-
 
 
 }
