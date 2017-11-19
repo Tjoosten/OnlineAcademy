@@ -9,7 +9,7 @@ export class DataService {
   constructor(private database: AngularFireDatabase ) {
   }
   async saveProfile(user: User, profile: Profile) {
-    this.profileObject= this.database.object(`/pofiles/${user.uid}`);
+    this.profileObject= this.database.object(`/profiles/${user.uid}`);
     try {
       this.profileObject.set(profile);
       return true

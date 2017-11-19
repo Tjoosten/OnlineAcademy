@@ -5,21 +5,29 @@ import firebase from 'firebase';
 import { AngularFireDatabase } from "angularfire2/database";
 @IonicPage()
 @Component({
-  selector: 'page-quote',
-  templateUrl: 'quote.html',
+  selector: 'page-show-quotes',
+  templateUrl: 'show-quotes.html',
 })
-export class QuotePage {
+export class ShowQuotesPage {
   //Reference to firebase quotes
   QuotesRef: firebase.database.Reference = firebase.database().ref('/quotes/');
+  //Array to hold quotes
+  Quotes : Array<any> = [];
   constructor(public navCtrl: NavController, public navParams: NavParams, private afdb: AngularFireDatabase) {
   }
-  addQuote(Author: string, Quote: string): void {
-    this.QuotesRef.push({
-      Auteur: Author,
-      Quote: Quote,
-    })
+
+  navigateToPage(pageName:string) {
+    this.navCtrl.push(pageName);
   }
 
-
+  ionViewDidLoad() {
+    this.QuotesRef.on('value' , quoteSnapshot => {
+      this.Quotes = [];
+     quoteSnapshot.forEach(quoteSnap => {
+      this.Quotes.push(quoteSnap.val());
+           return false;
+     });
+    });
+  }
 
 }

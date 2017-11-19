@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Online Academy</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list *ngIf="Quotes !== null">
+    <ion-item  *ngFor="let quotes of Quotes">
+      <div class="q" text-wrap>{{quotes.Quote}}</div>
+      {{quotes.Auteur}}
+      </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <button ion-button block (click)="navigateToPage('QuotePage')">Voeg je eigen quote toe.</button>
+</ion-footer>

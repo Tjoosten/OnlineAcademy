@@ -12,14 +12,4 @@
     <ion-row><label>Quote:</label></ion-row>
     <ion-textarea [(ngModel)]="Quote" type="text" placeholder="Uw quote" id="quote"></ion-textarea>
     <button ion-button block (click)="addQuote(Author,Quote)">Sla quote op</button>
-
-
-  
-      <ion-list *ngIf="Quotes !== null">
-        <ion-item  *ngFor="let quotes of Quotes">
-          <div class="q" text-wrap>{{quotes.Quote}}</div>
-          {{quotes.Auteur}}
-          </ion-item>
-      </ion-list>
-
 </ion-content>

@@ -19,14 +19,12 @@ tab2Root: string;
 tab3Root: string;
 tab4Root: string;
 tab5Root: string;
-tab6Root: string;
   constructor() {
     this.tab1Root = 'JournalPage';
     this.tab2Root = 'ProfilePage';
     this.tab3Root = 'HomePage';
-    this.tab4Root = 'MorePage';
-    this.tab5Root = "AgendaPage"
-    this.tab6Root = "QuotePage"
+    this.tab4Root = 'AgendaPage';
+    this.tab5Root = "ShowQuotesPage";
   }
 
 
