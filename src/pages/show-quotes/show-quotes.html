@@ -10,8 +10,12 @@
 <ion-content padding>
   <ion-list *ngIf="Quotes !== null">
     <ion-item  *ngFor="let quotes of Quotes">
-      <div class="q" text-wrap>{{quotes.Quote}}</div>
-      {{quotes.Auteur}}
+      <div class="w3-panel w3-leftbar w3-light-grey">
+          <p class="w3-xlarge w3-serif">
+            <p>{{quotes.Day}}/{{quotes.Month}}/{{quotes.Year}}</p>
+            <i text-wrap>"{{quotes.Quote}}"</i>
+          <p>{{quotes.Auteur}}</p>
+        </div>
       </ion-item>
   </ion-list>
 </ion-content>

@@ -8,8 +8,8 @@
 
 <ion-content>
     <ion-row><label>Auteur van de quote:</label></ion-row>
-    <ion-input [(ngModel)]="Author" type="text" placeholder="Auteur van de quote" id="auteur"></ion-input>
+    <ion-input [(ngModel)]="quote.author" type="text" placeholder="Auteur van de quote" id="auteur"></ion-input>
     <ion-row><label>Quote:</label></ion-row>
-    <ion-textarea [(ngModel)]="Quote" type="text" placeholder="Uw quote" id="quote"></ion-textarea>
-    <button ion-button block (click)="addQuote(Author,Quote)">Sla quote op</button>
+    <ion-textarea [(ngModel)]="quote.quote" type="text" placeholder="Uw quote" id="quote"></ion-textarea>
+    <button ion-button block (click)="addQuote(quote.author,quote.quote)">Sla quote op</button>
 </ion-content>
