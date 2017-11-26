@@ -13,12 +13,19 @@ import {FormsModule} from '@angular/forms';
 import { AuthService } from '../providers/auth.service';
 import { DataService } from '../providers/data.service';
 import { AngularFireDatabaseModule } from "angularfire2/database";
+import {NotesService} from "../services/notes.service";
+
+
+import { Home2Page } from '../pages/home2/home2';
+import {DetailPage} from "../pages/detail/detail";
 
 
 
 @NgModule({
   declarations: [
     MyApp,
+    Home2Page,
+    DetailPage
   ],
   imports: [
     BrowserModule,

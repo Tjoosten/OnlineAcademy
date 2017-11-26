@@ -57,6 +57,14 @@ module.exports = [
     "clobbers": [
       "YoutubeVideoPlayer"
     ]
+  },
+  {
+    "id": "cordova-plugin-firebase.FirebasePlugin",
+    "file": "plugins/cordova-plugin-firebase/www/firebase.js",
+    "pluginId": "cordova-plugin-firebase",
+    "clobbers": [
+      "FirebasePlugin"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -70,7 +78,8 @@ module.exports.metadata =
   "cordova-plugin-videoplayer": "0.1.4",
   "cordova-plugin-whitelist": "1.3.3",
   "ionic-plugin-keyboard": "2.2.1",
-  "cordova-plugin-youtube-video-player": "1.0.6"
+  "cordova-plugin-youtube-video-player": "1.0.6",
+  "cordova-plugin-firebase": "0.1.24"
 };
 // BOTTOM OF METADATA
 });

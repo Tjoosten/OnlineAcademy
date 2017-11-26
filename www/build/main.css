@@ -25679,10 +25679,14 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+.global__input-error {
+  color: red;
+}
+
 ion-input {
   text-align: left;
   background-color: rgba(37, 202, 239, 0.342);
-  color: #22caf4;
+  color: #2b373a;
   width: 100%;
   padding: 7px;
   margin-top: 10px;
@@ -25719,6 +25723,24 @@ ion-footer button {
   padding-top: 1000px;
 }
 
+page-explore ion-slides {
+  margin-top: 5px;
+  height: 260px;
+  width: 415px;
+}
+
+page-explore .swiper-container {
+  width: 401px;
+}
+
+page-explore .slide-zoom {
+  width: 450px;
+}
+
+page-explore ion-slide.swiper-slide {
+  width: 400px;
+}
+
 img {
   width: 100%;
   margin: 0 auto;
@@ -25731,6 +25753,30 @@ img {
   width: 150px;
   height: 150px;
   display: block;
+}
+
+page-quote #auteur {
+  width: 50%;
+  background: white;
+}
+
+page-quote #quote {
+  height: 25%;
+  background: #f1f1f1;
+}
+
+page-show-quotes .triangle-isosceles {
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  color: #000;
+  background: #b6b6b6;
+  border-radius: 10px;
+  quotes: "\0022" "\0022";
+}
+
+page-training-courses img {
+  width: 100%;
 }
 
 page-welcome video {
