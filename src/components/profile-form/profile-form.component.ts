@@ -30,9 +30,12 @@ export class ProfileFormComponent implements OnDestroy {
     if(this.authenticatedUser){
       this.profile.email = this.authenticatedUser.email;
       const result = await this.data.saveProfile(this.authenticatedUser, this.profile);
-      console.log(result);
+      this.navigateToPage("LoginPage")
     }
     
+  }
+  navigateToPage(pageName:string) {
+    this.navCtrl.setRoot(pageName);
   }
 ngOnDestroy(): void {
   this.authenticatedUser$.unsubscribe();
